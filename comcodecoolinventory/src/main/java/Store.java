@@ -17,13 +17,7 @@ import java.util.List;
 
 public abstract class Store implements StorageCapable {
 
-    static File inputFile = new File("result.xml");
-    static String filename = "Products.xml";
     private List listOfProducts = new ArrayList();
-
-    public List<Product> getProducts(){
-        return listOfProducts;
-    }
 
     @Override
     public List<Product> getAllProduct() {
